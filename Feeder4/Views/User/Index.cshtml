@@ -1,0 +1,18 @@
+﻿@model UserViewModel
+
+@{
+    ViewData["Title"] = "UserIndexPage";
+}
+
+<hi>Hello USER @Model.Name</hi>
+
+<ul>
+    @foreach (var feeder in Model.FeedersId)
+    {
+        <li>
+            @(feeder) <a href="@Url.Action("ShowInfo", new {id = feeder})">ShowInfo</a> <a href="@Url.Action("AddTimetable", new {id = feeder})">AddTimetable</a> <a href="@Url.Action("DeleteTimetable")">DeleteTimetable</a> <a href="@Url.Action("ManualControl", new {id = feeder})">ManualControl</a> <a href="@Url.Action("Eat", new {id = feeder})">Eat</a>
+        </li> 
+    }
+</ul>
+
+<a href="@Url.Action("Logs")">Logs</a>

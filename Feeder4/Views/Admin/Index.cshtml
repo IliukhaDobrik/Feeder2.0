@@ -1,0 +1,11 @@
+﻿@model AdminViewModel
+
+@{
+    ViewData["Title"] = "AdminIndexPage";
+}
+
+<h1>Hello ADMIN @Model.Name</h1>
+
+<a href="@Url.Action("Register")">Register</a>
+<a href="@Url.Action("AddFeeder")">AddFeeder</a>
+<a href="@Url.Action("Logs")">Logs</a>

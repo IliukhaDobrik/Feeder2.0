@@ -1,0 +1,16 @@
+[
+  {
+    "FeederId": "0e341cbc-08db-49e0-b298-b73093a6795a",
+    "TimetableId": null,
+    "State": false,
+    "Name": "ForBarsik",
+    "Mark": null
+  },
+  {
+    "FeederId": "425b886a-fbcb-4a70-9d0b-53d1e7518a11",
+    "TimetableId": null,
+    "State": true,
+    "Name": "ForAlica",
+    "Mark": null
+  }
+]

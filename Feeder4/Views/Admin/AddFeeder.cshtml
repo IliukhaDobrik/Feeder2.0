@@ -1,0 +1,22 @@
+﻿@using Feeder4.Dtos;
+@model FeederRegisterDto
+
+@{
+    ViewData["Title"] = "AddFeederPage";
+}
+
+<form method="post">
+    <div class="form-group">
+        <label>UserId</label>
+        <input asp-for="UserId" class="form-control" placeholder="Model">
+    </div> <br>
+    <div class="form-group">
+        <label>Name</label>
+        <input asp-for="Name" class="form-control" placeholder="Model">
+    </div> <br>
+    <div class="form-group">
+        <label>Type</label>
+        <input asp-for="Type" class="form-control" placeholder="Size">
+    </div> <br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
